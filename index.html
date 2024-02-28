@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/output.css">
+    <title>Mahdi Hasanaghaei - Portfolio</title>
+</head>
+
+<body>
+
+    <!-- Code starts -->
+
+    <main class="*:text-[#2d4040]">
+
+        <!-- Noisy effect starts -->
+
+        <div class="w-full fixed top-[0%] bottom-[0%] left-[0%] right-[0%] bg-[#cfe6e5] z-[-1000]">
+            <div class="w-full h-full opacity-[0.3] static">
+                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <filter id="noiseFilter">
+                        <feTurbulence type="fractalNoise" baseFrequency="3.48" numOctaves="3" stitchTiles="stitch">
+                        </feTurbulence>
+                    </filter>
+                    <rect width="100%" height="100%" filter="url(#noiseFilter)"></rect>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Noisy effect ends -->
+
+        <!-- Main content starts -->
+
+        <section class="w-full md:container mx-auto">
+            <div class="w-full md:w-[90%] row mx-auto px-3 md:px-0">
+
+                <!-- Info starts -->
+
+                <div class="w-full md:w-[80%]">
+
+                    <!-- Header section starts -->
+
+                    <header class="w-full">
+                        <nav class=" w-full row *:md:hidden py-5">
+                            <ul
+                                class="row justify-center items-center p-3 rounded-full bg-[#cfe6e5] shadow-home hover:shadow-home-hover transition ease-in-out duration-[400ms]">
+                                <li>
+                                    <a class="flex" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                            fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="row p-3 rounded-3xl bg-[#cfe6e5] ms-8 *:px-3 shadow-nav">
+                                <li class="group">
+                                    <a class="flex w-full group-hover:scale-90 transition ease-in-out duration-[400ms]"
+                                        href="#about">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                            fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="group">
+                                    <a class="flex w-full group-hover:scale-90 transition ease-in-out duration-[400ms]"
+                                        href="#portfolio">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                            fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
+                                            <path
+                                                d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="group">
+                                    <a class="flex w-full group-hover:scale-90 transition ease-in-out duration-[400ms]"
+                                        href="#services">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                            fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="group">
+                                    <a class="flex w-full group-hover:scale-90 transition ease-in-out duration-[400ms]"
+                                        href="#contact">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                            fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                            <path
+                                                d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="w-full md:w-[95%] shadow-box rounded-2xl my-6 md:my-0 *:my-5">
+                            <div class="w-full row justify-between items-center *:my-5">
+                                <span class="flex w-2/3 font-inter text-base capitalize">
+                                    <h2
+                                        class="font-inter text-base capitalize w-[200px] h-[30px] rounded-3xl row justify-center items-center shadow-box ms-4">
+                                        front-end developer
+                                    </h2>
+                                </span>
+                                <div class="w-1/3 row justify-end items-center">
+                                    <div
+                                        class="border border-slate-400 w-[42px] h-[42px] rounded-full row justify-center items-center me-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                            fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full row">
+                                <div class="w-full xl:w-2/3">
+                                    <h1
+                                        class="font-inter text-4xl md:text-5xl font-bold capitalize ms-4 my-5 animate-text-move">
+                                        mahdi
+                                        hasanaghaei.
+                                    </h1>
+                                    <div class="row items-center ms-4 my-6">
+                                        <div class="w-[40px] h-[40px] rounded-full row justify-center items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                                fill="currentColor" class="bi bi-arrow-right-circle"
+                                                viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <span class="font-inter capitalize text-sm md:text-base">
+                                            available for new work
+                                        </span>
+                                    </div>
+                                    <div class="row mb-5">
+                                        <div class="w-full md:w-1/3 my-6 mx-4">
+                                            <a class="group row justify-center items-center w-[200px] h-[50px] rounded-3xl capitalize text-sm md:text-base shadow-box hover:shadow-home-hover transition-shadow ease-in-out duration-[400ms]"
+                                                href="#portfolio">view my work
+                                                <svg class="mx-3 group-hover:translate-x-[20%] transition ease-in-out duration-[400ms]"
+                                                    xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                                    fill="currentColor" class="bi bi-arrow-right-circle"
+                                                    viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="w-full md:w-1/3 ms-4 md:mx-10 my-6">
+                                            <a class="group row justify-center items-center w-[200px] h-[50px] rounded-3xl capitalize text-sm md:text-base shadow-box hover:shadow-home-hover transition ease-in-out duration-[400ms]"
+                                                href="#">
+                                                download my CV
+                                                <span
+                                                    class="material-symbols-outlined text-lg ms-1 group-hover:translate-x-[5%] group-hover:translate-y-[-5%] transition ease-in-out duration-[400ms]">
+                                                    north_east
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full xl:w-1/3 row xl:justify-center xl:items-end my-6 xl:my-10">
+                                    <p class="font-inter text-lg mx-4 xl:text-center">
+                                        "Crafting Digital Experiences with Passion & Precision"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+
+                    <!-- Header section ends -->
+
+                    <!-- About me section starts -->
+
+                    <div id="about" class="w-full md:w-[95%] my-10 md:my-20 *:my-5 row">
+                        <div class="w-full lg:w-1/2 order-2 lg:order-1">
+                            <figure
+                                class="w-full md:w-[95%] row justify-center items-center shadow-image-box rounded-3xl p-10">
+                                <img class="object-cover rounded-2xl shadow-image" src="img/mahdi.webp"
+                                    alt="mahdihasanaghaei-image">
+                            </figure>
+                        </div>
+                        <div class="w-full lg:w-1/2 order-1 lg:order-2 row content-between">
+                            <div class="w-full row">
+                                <div class="row w-2/3">
+                                    <span class="font-inter text-4xl lg:text-5xl capitalize tracking-wide font-bold">
+                                        about me.
+                                    </span>
+                                </div>
+                                <div class="w-1/3 row justify-end">
+                                    <div
+                                        class="border w-[42px] h-[42px] border-slate-400 rounded-full row justify-center items-center me-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                            fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full row my-10">
+                                <p class="font-inter text-base lg:text-lg">
+                                    🚀 Aspiring Junior Front-End Web Developer 🌐 | Passionate about crafting engaging
+                                    and user-friendly digital experiences. 🎨 Proficient in HTML, CSS, and JavaScript
+                                    with a keen eye for design and a commitment to creating responsive, accessible
+                                    websites. 💻 Eager to learn and adapt to emerging technologies in the ever-evolving
+                                    world of web development. 🌟 Let's connect and explore the exciting possibilities at
+                                    the intersection of creativity and code!
+                                </p>
+                            </div>
+                            <div class="w-full row">
+                                <a class="group row justify-center items-center w-[200px] h-[50px] rounded-3xl capitalize text-sm md:text-base shadow-box hover:shadow-home-hover transition ease-in-out duration-[400ms]"
+                                    href="https://www.linkedin.com/in/mahdi-hasanaghaei/">
+                                    connect to linkedin
+                                    <span
+                                        class="material-symbols-outlined text-lg ms-1 group-hover:translate-x-[5%] group-hover:translate-y-[-5%] transition ease-in-out duration-[400ms]">
+                                        north_east
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- About me section ends -->
+
+                    <!-- Skills and edu section starts -->
+
+                    <div class="w-full md:w-[95%] my-10 md:my-20 *:my-5 row">
+                        <div class="w-full lg:w-1/2">
+                            <div class="w-full mb-5">
+                                <span class="font-inter text-4xl md:text-5xl font-bold capitalize tracking-wide">
+                                    skills.
+                                </span>
+                            </div>
+                            <div class="w-full lg:w-[90%] shadow-box rounded-2xl p-5 *:my-2">
+                                <div class="row">
+                                    <span
+                                        class="font-inter text-base capitalize w-[120px] h-[30px] row justify-center items-center rounded-3xl shadow-box tracking-wider">
+                                        HTML5
+                                    </span>
+                                </div>
+                                <div class="row justify-end">
+                                    <span
+                                        class="font-inter text-base capitalize w-[120px] h-[30px] row justify-center items-center rounded-3xl shadow-box tracking-wider">
+                                        CSS3
+                                    </span>
+                                </div>
+                                <div class="row">
+                                    <span
+                                        class="font-inter text-base capitalize w-[120px] h-[30px] row justify-center items-center rounded-3xl shadow-box tracking-wider">
+                                        bootStrap5
+                                    </span>
+                                </div>
+                                <div class="row justify-end">
+                                    <span
+                                        class="font-inter text-base capitalize w-[120px] h-[30px] row justify-center items-center rounded-3xl shadow-box tracking-wider">
+                                        TailwindCSS
+                                    </span>
+                                </div>
+                                <div class="row">
+                                    <span
+                                        class="font-inter text-base capitalize w-[120px] h-[30px] row justify-center items-center rounded-3xl shadow-box tracking-wider">
+                                        react.JS
+                                    </span>
+                                </div>
+                                <div class="row justify-end">
+                                    <span
+                                        class="font-inter text-base capitalize w-[120px] h-[30px] row justify-center items-center rounded-3xl shadow-box tracking-wider">
+                                        Next.JS
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full lg:w-1/2">
+                            <div class="w-full mb-5">
+                                <span class="font-inter text-4xl md:text-5xl font-bold capitalize tracking-wide">
+                                    education.
+                                </span>
+                            </div>
+                            <div class="w-full lg:w-[90%] shadow-box rounded-2xl p-5">
+                                <div class="w-full">
+                                    <span
+                                        class="row w-[120px] h-[30px] rounded-3xl shadow-box row justify-center items-center font-inter text-base">
+                                        2019-2024
+                                    </span>
+                                </div>
+                                <div
+                                    class="w-full row *:row *:w-full *:items-center *:font-inter *:my-[26px] *:xl:my-[39px]">
+                                    <span class="text-lg">
+                                        BSc.Computer Software Engineering
+                                    </span>
+                                    <span>
+                                        Azad University of Tehran North Branch
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills and edu section ends -->
+
+                    <!-- Projects section starts -->
+
+                    <div id="portfolio" class="w-full md:w-[95%] my-10 md:my-20 *:my-5 row">
+
+                        <!-- Project digital -->
+
+                        <div class="w-full row">
+                            <div class="w-2/3">
+                                <span class="font-inter text-4xl md:text-5xl font-bold capitalize tracking-wide"">
+                                    latest works.
+                                </span>
+                            </div>
+                            <div class=" w-1/3 row justify-end items-center">
+                                    <div
+                                        class="border w-[42px] h-[42px] border-slate-400 rounded-full row justify-center items-center me-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                            fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
+                                            <path
+                                                d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full p-5 lg:p-10 *:my-5 shadow-box rounded-2xl hover:shadow-home-hover transition ease-in-out duration-[400ms]">
+                            <div class="w-full">
+                                <span
+                                    class="row w-[120px] h-[30px] rounded-3xl shadow-box row justify-center items-center font-inter text-sm capitalize">
+                                    agency
+                                </span>
+                            </div>
+                            <div class="w-full">
+                                <span class="font-inter text-3xl md:text-4xl capitalize">
+                                    digital.
+                                </span>
+                            </div>
+                            <div class="w-full">
+                                <p class="font-inter text-base">
+                                    Technologies Used : HTML5 - CSS3 - FLEXBOX - TAILWINDCSS
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="w-full lg:w-1/3 my-6">
+                                    <a class="group row justify-center items-center w-[200px] h-[50px] rounded-3xl capitalize text-sm md:text-base shadow-box hover:shadow-home-hover transition-shadow ease-in-out duration-[400ms]"
+                                        href="https://github.com/mahdihasanaghaei/Digital-Agency-Template"
+                                        target="_blank">github repo
+                                        <svg class="mx-3 group-hover:translate-x-[20%] transition ease-in-out duration-[400ms]"
+                                            xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                            fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="w-full lg:w-1/3 my-6">
+                                    <a class="group row justify-center items-center w-[200px] h-[50px] rounded-3xl capitalize text-sm md:text-base shadow-box hover:shadow-home-hover transition ease-in-out duration-[400ms]"
+                                        href="https://mahdihasanaghaei.github.io/Digital-Agency-Template/"
+                                        target="_blank">
+                                        online demo
+                                        <span
+                                            class="material-symbols-outlined text-lg ms-1 group-hover:translate-x-[5%] group-hover:translate-y-[-5%] transition ease-in-out duration-[400ms]">
+                                            north_east
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <figure>
+                                <img class="rounded-2xl shadow-image" src="img/digital.webp" alt="digital-demo-image">
+                            </figure>
+                        </div>
+
+                        <!-- Project leona -->
+
+                        <div
+                            class="w-full p-5 lg:p-10 *:my-5 shadow-box rounded-2xl hover:shadow-home-hover transition ease-in-out duration-[400ms]">
+                            <div class="w-full">
+                                <span
+                                    class="row w-[120px] h-[30px] rounded-3xl shadow-box row justify-center items-center font-inter text-sm capitalize">
+                                    agency
+                                </span>
+                            </div>
+                            <div class="w-full">
+                                <span class="font-inter text-3xl md:text-4xl capitalize">
+                                    leona.
+                                </span>
+                            </div>
+                            <div class="w-full">
+                                <p class="font-inter text-base">
+                                    Technologies Used : HTML5 - CSS3 - FLEXBOX - BOOTSTRAP5
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="w-full lg:w-1/3 my-6">
+                                    <a class="group row justify-center items-center w-[200px] h-[50px] rounded-3xl capitalize text-sm md:text-base shadow-box hover:shadow-home-hover transition-shadow ease-in-out duration-[400ms]"
+                                        href="https://github.com/mahdihasanaghaei/Leona-Muse-Template"
+                                        target="_blank">github repo
+                                        <svg class="mx-3 group-hover:translate-x-[20%] transition ease-in-out duration-[400ms]"
+                                            xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                            fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="w-full lg:w-1/3 my-6">
+                                    <a class="group row justify-center items-center w-[200px] h-[50px] rounded-3xl capitalize text-sm md:text-base shadow-box hover:shadow-home-hover transition ease-in-out duration-[400ms]"
+                                        href="https://mahdihasanaghaei.github.io/Leona-Muse-Template/" target="_blank">
+                                        online demo
+                                        <span
+                                            class="material-symbols-outlined text-lg ms-1 group-hover:translate-x-[5%] group-hover:translate-y-[-5%] transition ease-in-out duration-[400ms]">
+                                            north_east
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <figure>
+                                <img class="rounded-2xl shadow-image" src="img/leona.webp" alt="leona-demo-image">
+                            </figure>
+                        </div>
+
+                        <!-- Project crafto -->
+
+                        <div
+                            class="w-full p-5 lg:p-10 *:my-5 shadow-box rounded-2xl hover:shadow-home-hover transition-shadow ease-in-out duration-[400ms]">
+                            <div class="w-full">
+                                <span
+                                    class="row w-[120px] h-[30px] rounded-3xl shadow-box row justify-center items-center font-inter text-sm capitalize">
+                                    agency
+                                </span>
+                            </div>
+                            <div class="w-full">
+                                <span class="font-inter text-3xl md:text-4xl capitalize">
+                                    crafto.
+                                </span>
+                            </div>
+                            <div class="w-full">
+                                <p class="font-inter text-base">
+                                    Technologies Used : HTML5 - CSS3 - FLEXBOX - SASS
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="w-full lg:w-1/3 my-6">
+                                    <a class="group row justify-center items-center w-[200px] h-[50px] rounded-3xl capitalize text-sm md:text-base shadow-box hover:shadow-home-hover transition-shadow ease-in-out duration-[400ms]"
+                                        href="https://github.com/mahdihasanaghaei/Crafto-Agency-Template"
+                                        target="_blank">github repo
+                                        <svg class="mx-3 group-hover:translate-x-[20%] transition ease-in-out duration-[400ms]"
+                                            xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                            fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="w-full lg:w-1/3 my-6">
+                                    <a class="group row justify-center items-center w-[200px] h-[50px] rounded-3xl capitalize text-sm md:text-base shadow-box hover:shadow-home-hover transition ease-in-out duration-[400ms]"
+                                        href="https://mahdihasanaghaei.github.io/Crafto-Agency-Template/"
+                                        target="_blank">
+                                        online demo
+                                        <span
+                                            class="material-symbols-outlined text-lg ms-1 group-hover:translate-x-[5%] group-hover:translate-y-[-5%] transition ease-in-out duration-[400ms]">
+                                            north_east
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <figure>
+                                <img class="rounded-2xl shadow-image" src="img/Crafto.webp" alt="crafto-demo-image">
+                            </figure>
+                        </div>
+
+                        <!-- Project pofo -->
+
+                        <div
+                            class="w-full p-5 lg:p-10 *:my-5 shadow-box rounded-2xl hover:shadow-home-hover transition-shadow ease-in-out duration-[400ms]">
+                            <div class="w-full">
+                                <span
+                                    class="row w-[120px] h-[30px] rounded-3xl shadow-box row justify-center items-center font-inter text-sm capitalize">
+                                    agency
+                                </span>
+                            </div>
+                            <div class="w-full">
+                                <span class="font-inter text-3xl md:text-4xl capitalize">
+                                    pofo.
+                                </span>
+                            </div>
+                            <div class="w-full">
+                                <p class="font-inter text-base">
+                                    Technologies Used : HTML5 - CSS3 - FLEXBOX - SASS - GRID
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="w-full lg:w-1/3 my-6">
+                                    <a class="group row justify-center items-center w-[200px] h-[50px] rounded-3xl capitalize text-sm md:text-base shadow-box hover:shadow-home-hover transition-shadow ease-in-out duration-[400ms]"
+                                        href="https://github.com/mahdihasanaghaei/Pofo-Agency-Template"
+                                        target="_blank">github repo
+                                        <svg class="mx-3 group-hover:translate-x-[20%] transition ease-in-out duration-[400ms]"
+                                            xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                            fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="w-full lg:w-1/3 my-6">
+                                    <a class="group row justify-center items-center w-[200px] h-[50px] rounded-3xl capitalize text-sm md:text-base shadow-box hover:shadow-home-hover transition ease-in-out duration-[400ms]"
+                                        href="https://mahdihasanaghaei.github.io/Pofo-Agency-Template/" target="_blank">
+                                        online demo
+                                        <span
+                                            class="material-symbols-outlined text-lg ms-1 group-hover:translate-x-[5%] group-hover:translate-y-[-5%] transition ease-in-out duration-[400ms]">
+                                            north_east
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <figure>
+                                <img class="rounded-2xl shadow-image" src="img/pofo.webp" alt="pofo-demo-image">
+                            </figure>
+                        </div>
+
+                        <!-- Project alexa-->
+
+                        <div
+                            class="w-full p-5 lg:p-10 *:my-5 shadow-box rounded-2xl hover:shadow-home-hover transition-shadow ease-in-out duration-[400ms]">
+                            <div class="w-full">
+                                <span
+                                    class="row w-[120px] h-[30px] rounded-3xl shadow-box row justify-center items-center font-inter text-sm capitalize">
+                                    company
+                                </span>
+                            </div>
+                            <div class="w-full">
+                                <span class="font-inter text-3xl md:text-4xl capitalize">
+                                    alexa.
+                                </span>
+                            </div>
+                            <div class="w-full">
+                                <p class="font-inter text-base">
+                                    Technologies Used : HTML5 - CSS3 - FLEXBOX - SASS
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="w-full lg:w-1/3 my-6">
+                                    <a class="group row justify-center items-center w-[200px] h-[50px] rounded-3xl capitalize text-sm md:text-base shadow-box hover:shadow-home-hover transition-shadow ease-in-out duration-[400ms]"
+                                        href="https://github.com/mahdihasanaghaei/Alexa-Template" target="_blank">github
+                                        repo
+                                        <svg class="mx-3 group-hover:translate-x-[20%] transition ease-in-out duration-[400ms]"
+                                            xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                            fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="w-full lg:w-1/3 my-6">
+                                    <a class="group row justify-center items-center w-[200px] h-[50px] rounded-3xl capitalize text-sm md:text-base shadow-box hover:shadow-home-hover transition ease-in-out duration-[400ms]"
+                                        href="https://mahdihasanaghaei.github.io/Alexa-Template/" target="_blank">
+                                        online demo
+                                        <span
+                                            class="material-symbols-outlined text-lg ms-1 group-hover:translate-x-[5%] group-hover:translate-y-[-5%] transition ease-in-out duration-[400ms]">
+                                            north_east
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <figure>
+                                <img class="rounded-2xl shadow-image" src="img/alexa.webp" alt="alexa-demo-image">
+                            </figure>
+                        </div>
+
+                        <!-- Project fitness club -->
+
+                        <div
+                            class="w-full p-5 lg:p-10 *:my-5 shadow-box rounded-2xl hover:shadow-home-hover transition-shadow ease-in-out duration-[400ms]">
+                            <div class="w-full">
+                                <span
+                                    class="row w-[120px] h-[30px] rounded-3xl shadow-box row justify-center items-center font-inter text-sm capitalize">
+                                    club
+                                </span>
+                            </div>
+                            <div class="w-full">
+                                <span class="font-inter text-3xl md:text-4xl capitalize">
+                                    avada fitness.
+                                </span>
+                            </div>
+                            <div class="w-full">
+                                <p font-inter text-base">
+                                    Technologies Used : HTML5 - CSS3 - FLEXBOX - SASS
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="w-full lg:w-1/3 my-6">
+                                    <a class="group row justify-center items-center w-[200px] h-[50px] rounded-3xl capitalize text-sm md:text-base shadow-box hover:shadow-home-hover transition-shadow ease-in-out duration-[400ms]"
+                                        href="https://github.com/mahdihasanaghaei/Avada-Fitness-Template"
+                                        target="_blank">github
+                                        repo
+                                        <svg class="mx-3 group-hover:translate-x-[20%] transition ease-in-out duration-[400ms]"
+                                            xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                            fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="w-full lg:w-1/3 my-6">
+                                    <a class="group row justify-center items-center w-[200px] h-[50px] rounded-3xl capitalize text-sm md:text-base shadow-box hover:shadow-home-hover transition ease-in-out duration-[400ms]"
+                                        href="https://mahdihasanaghaei.github.io/Avada-Fitness-Template/"
+                                        target="_blank">
+                                        online demo
+                                        <span
+                                            class="material-symbols-outlined text-lg ms-1 group-hover:translate-x-[5%] group-hover:translate-y-[-5%] transition ease-in-out duration-[400ms]">
+                                            north_east
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <figure>
+                                <img class="rounded-2xl shadow-image" src="img/fitness.webp" alt="fitness-demo-image">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!-- Projects section ends -->
+
+                    <!-- Services section start -->
+
+                    <div id="services" class="w-full md:w-[95%] my-10 md:my-20 *:my-5 row">
+                        <div class="w-full row">
+                            <div class="w-2/3">
+                                <span class="font-inter text-4xl md:text-5xl font-bold capitalize tracking-wide"">
+                                    services.
+                                </span>
+                            </div>
+                            <div class=" w-1/3 row justify-end items-center">
+                                    <div
+                                        class="border w-[42px] h-[42px] border-slate-400 rounded-full row justify-center items-center me-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                            fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5">
+                                            </path>
+                                        </svg>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="w-full *:my-5">
+                            <div class="w-full row">
+                                <div class="w-[15%] lg:w-[10%]">
+                                    <div
+                                        class="w-[42px] h-[42px] rounded-full row justify-center items-center shadow-box">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                            fill="currentColor" class="bi bi-brush" viewBox="0 0 16 16">
+                                            <path
+                                                d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.1 6.1 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.1 8.1 0 0 1-3.078.132 4 4 0 0 1-.562-.135 1.4 1.4 0 0 1-.466-.247.7.7 0 0 1-.204-.288.62.62 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896q.19.012.348.048c.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04M4.705 11.912a1.2 1.2 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.4 3.4 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3 3 0 0 0 .126-.75zm1.44.026c.12-.04.277-.1.458-.183a5.1 5.1 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005zm3.582-3.043.002.001h-.002z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="w-[85%] lg:w-[90%]">
+                                    <hgroup class="*:mb-5">
+                                        <h3 class="text-2xl lg:text-3xl font-inter capitalize font-bold">
+                                            website development
+                                        </h3>
+                                        <p class="font-inter">
+                                            "Crafting dynamic and user-centric websites tailored to your unique vision.
+                                            From sleek portfolios to robust e-commerce platforms, I specialize in
+                                            bringing your online presence to life with cutting-edge design and
+                                            functionality."
+                                        </p>
+                                    </hgroup>
+                                </div>
+                            </div>
+                            <div class="w-full row">
+                                <div class="w-[15%] lg:w-[10%]">
+                                    <div
+                                        class="w-[42px] h-[42px] rounded-full row justify-center items-center shadow-box">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                            fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="w-[85%] lg:w-[90%]">
+                                    <hgroup class="*:mb-5">
+                                        <h3 class="text-2xl lg:text-3xl font-inter capitalize font-bold">
+                                            sEO strategy
+                                        </h3>
+                                        <p class="font-inter">
+                                            "Elevating your online visibility with strategic SEO solutions. From keyword
+                                            optimization to content enhancement, I help businesses climb search engine
+                                            rankings and reach their target audience effectively."
+                                        </p>
+                                    </hgroup>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Services section end -->
+
+                    <!-- Contact section starts -->
+
+                    <div id="contact"
+                        class="w-full md:w-[95%] my-10 md:my-20 *:my-5 row shadow-box p-5 lg:p-10 rounded-2xl">
+                        <div class="w-full row">
+                            <div class="w-2/3">
+                                <span class="font-inter text-4xl md:text-5xl font-bold capitalize tracking-wide"">
+                                    contact me.
+                                </span>
+                            </div>
+                            <div class=" w-1/3 row justify-end items-center">
+                                    <div
+                                        class="border w-[42px] h-[42px] border-slate-400 rounded-full row justify-center items-center me-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                            fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                            <path
+                                                d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="w-full row *:my-5">
+                            <form id="form-main" class="row w-full *:my-5" action="email.php" method="POST">
+                                <div class="row w-full justify-between *:my-1 *:md:my-0">
+                                    <div class="w-full md:w-[45%] row *:my-2">
+                                        <label for="fname-inp" class="capitalize w-full font-inter text-lg">first
+                                            name:</label>
+                                        <input
+                                            class="bg-transparent rounded-3xl focus:outline-none shadow-input h-[40px] w-full placeholder:ps-3 p-2 font-inter focus:shadow-input-focus transition ease-in-out duration-100"
+                                            type="text" name="firstname" id="fname-inp"
+                                            placeholder="Enter your first name">
+                                    </div>
+                                    <div class="w-full md:w-[45%] row *:my-2">
+                                        <label for="lname-inp" class="capitalize w-full font-inter text-lg">last
+                                            name:</label>
+                                        <input
+                                            class="bg-transparent rounded-3xl focus:outline-none shadow-input h-[40px] w-full placeholder:ps-3 p-2 font-inter focus:shadow-input-focus transition ease-in-out duration-100"
+                                            type="text" name="lastname" id="lname-inp"
+                                            placeholder="Enter your last name">
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <label for="email-inp" class="capitalize w-full font-inter text-lg">enter your
+                                        email:</label>
+                                    <input type="email" name="email" id="email-inp"
+                                        placeholder="Enter a valid email address"
+                                        class="bg-transparent rounded-3xl focus:outline-none shadow-input h-[40px] w-full placeholder:ps-3 p-2 font-inter focus:shadow-input-focus transition ease-in-out duration-100">
+                                </div>
+                                <div class="w-full row">
+                                    <label for="message-inp"
+                                        class="capitalize w-full font-inter text-lg">message:</label>
+                                    <textarea name="message" id="message-inp" cols="30" rows="8"
+                                        class="bg-transparent rounded-3xl focus:outline-none shadow-input w-full placeholder:ps-3 p-2 font-inter focus:shadow-input-focus transition ease-in-out duration-100"
+                                        placeholder="Explain your thoughts!"></textarea>
+                                </div>
+                                <div class="w-full">
+                                    <button name="btn" type="submit"
+                                        class="row justify-center items-center w-[200px] h-[50px] capitalize rounded-3xl text-sm md:text-base shadow-box hover:shadow-home-hover transition ease-in-out duration-[400ms] cursor-pointer">
+                                        Submit
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="w-full row *:my-5">
+                                <div class="w-full">
+                                    <span class="w-full row font-inter text-2xl capitalize">
+                                        contact details.
+                                    </span>
+                                </div>
+                                <div class="w-full row">
+                                    <div class="w-full md:w-1/2 *:my-5">
+                                        <div class="w-full *:my-2">
+                                            <span class="row w-full font-inter text-lg capitalize">
+                                                email
+                                            </span>
+                                            <a href="mailto:mahdi.ha99@gmail.com"
+                                                class="underline hover:text-slate-500 transition ease-in-out duration-[400ms] text-sm md:text-base">
+                                                mahdi.ha99@gmail.com
+                                            </a>
+                                        </div>
+                                        <div class="w-full *:my-2">
+                                            <span class="row w-full font-inter text-lg capitalize">
+                                                phone number
+                                            </span>
+                                            <a href="tel:+9812368214"
+                                                class="underline hover:text-slate-500 transition ease-in-out duration-[400ms] text-sm md:text-base">
+                                                (+98)9123682145
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="w-full md:w-1/2 *:my-5">
+                                        <div class="w-full">
+                                            <span class="row w-full font-inter text-lg capitalize">
+                                                socials
+                                            </span>
+                                        </div>
+                                        <div class="w-full row justify-evenly items-center">
+                                            <a href="https://www.linkedin.com/in/mahdi-hasanaghaei/" target="_blank"
+                                                class="w-[42px] h-[42px] row justify-center items-center rounded-full shadow-box hover:shadow-home-hover transition ease-in-out duration-[400ms]">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="26px" height="26px"
+                                                    fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                            <a href="https://www.instagram.com/mahdihasanaghaei.web/" target="_blank"
+                                                class="w-[42px] h-[42px] row justify-center items-center rounded-full shadow-box hover:shadow-home-hover transition ease-in-out duration-[400ms]">
+                                                <svg width="26px" height="26px" viewBox="0 0 24 24" role="img"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                                                </svg>
+                                            </a>
+                                            <a href="https://github.com/mahdihasanaghaei" target="_blank"
+                                                class="w-[42px] h-[42px] row justify-center items-center rounded-full shadow-box hover:shadow-home-hover transition ease-in-out duration-[400ms]">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="26px" height="26px"
+                                                    viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact section ends -->
+
+                    <div class="w-full md:w-[95%] my-10 row justify-center items-center">
+                        <a href="#"
+                            class="w-[100px] h-[100px] row justify-center items-center bg-white rounded-full animate-button-move">
+                            <span class="material-symbols-outlined text-4xl">
+                                arrow_upward
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Info ends -->
+
+                <!-- Main navbar starts -->
+
+                <div class="hidden md:block w-[20%]">
+                    <nav class="w-full h-[50svh] sticky top-[3rem] row flex-col md:items-end lg:items-start">
+                        <ul
+                            class=" w-[50px] h-[50px] row justify-center items-center rounded-full shadow-home-main hover:shadow-home-hover transition ease-in-out duration-[400ms]">
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
+                                        fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul
+                            class="w-[50px] rounded-3xl row flex-col justify-center items-center *:py-3 mt-8 divide-y-2 divide-black shadow-nav-main">
+                            <li
+                                class="relative after:hidden after:lg:flex after:content-['About'] after:absolute after:top-[18px] after:right-[-62px] after:font-inter after:text-base after:opacity-0 hover:after:opacity-100 after:transition after:ease-in-out after:duration-[400ms]">
+                                <a href="#about">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26px" height="26px"
+                                        fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li
+                                class="relative after:hidden after:lg:flex after:content-['Portfolio'] after:absolute after:top-[18px] after:right-[-80px] after:font-inter after:text-base after:opacity-0 hover:after:opacity-100 after:transition after:ease-in-out after:duration-[400ms]">
+                                <a href="#portfolio">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26px" height="26px"
+                                        fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
+                                        <path
+                                            d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li
+                                class="relative after:hidden after:lg:flex after:content-['Services'] after:absolute after:top-[18px] after:right-[-82px] after:font-inter after:text-base after:opacity-0 hover:after:opacity-100 after:transition after:ease-in-out after:duration-[400ms]">
+                                <a href="#services">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26px" height="26px"
+                                        fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li
+                                class="relative after:hidden after:lg:flex after:content-['Contact'] after:absolute after:top-[18px] after:right-[-78px] after:font-inter after:text-base after:opacity-0 hover:after:opacity-100 after:transition after:ease-in-out after:duration-[400ms]">
+                                <a href="#contact">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26px" height="26px"
+                                        fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Code ends -->
+
+</body>
+
+</html>
